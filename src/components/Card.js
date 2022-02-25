@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import profile from "../images/image.png";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 export class Card extends Component {
   render() {
@@ -20,11 +20,30 @@ export class Card extends Component {
               Data Engineer / Web Developer
             </p>
 
-            <div className="flex align-center justify-center mt-4" />
+            <div className="flex align-center justify-center mt-4">
+              <a
+                className="text-xl m-1 p-1 sm:m-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
+                href="https://github.com/ktakaham"
+              >
+                <FaGithub />
+                <span className="sr-only">Github</span>
+              </a>
+              <a
+                className="text-xl m-1 p-1 sm:m-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
+                href="https://twitter.com/Atkhm"
+              >
+                <FaTwitter />
+                <span className="sr-only">Twitter</span>
+              </a>
+              <a
+                className="text-xl m-1 p-1 sm:m-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
+                href="per.tkhm@gmail.com"
+              >
+                <FaEnvelope />
+                <span className="sr-only">Email</span>
+              </a>
+            </div>
           </div>
-          <a className="text-xl text-gray-800 hover: bg-gray-800 rounded-full">
-            <FaGithub />
-          </a>
         </div>
       </div>
     );
