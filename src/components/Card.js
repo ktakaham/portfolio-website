@@ -6,7 +6,7 @@ export class Card extends Component {
   render() {
     return (
       <div className="w-full">
-        <div className="felx flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
+        <div className="felx flex-col justify-center max-w-3xl mx-auto bg-white shadow-xl rounded-xl p-5">
           <div className="">
             <img
               className="w-32 mx-auto shadow-xl rounded-full drop-shadow-sm"
